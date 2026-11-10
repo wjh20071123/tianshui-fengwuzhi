@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于本站 · 卷末 | 天水风物志</title>
+<meta name="description" content="《天水风物志》的卷末：作业信息、制作工具、图片版权说明、数据来源与联系方式。六个页面，全部使用相对路径。">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://miaoda.feishu.cn" crossorigin>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="masthead" id="masthead">
+  <div class="masthead__inner">
+    <a class="brand" href="index.html" aria-label="返回首页">
+      <span class="brand-seal" aria-hidden="true">天</span>
+      <span class="brand-name">天水风物志</span>
+      <span class="brand-sub">陇上江南 · 羲皇故里</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">目录</button>
+    <nav class="site-nav" id="site-nav" aria-label="主导航">
+      <a href="index.html">卷首</a>
+      <a href="maijishan.html">麦积山</a>
+      <a href="fuximiao.html">伏羲庙</a>
+      <a href="gucheng.html">古城名刹</a>
+      <a href="shiwei.html">天水食味</a>
+      <a href="about.html" class="is-active" aria-current="page">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="chapter-head wrap">
+    <p class="chapter-head__no">卷末 · 版本与出处</p>
+    <h1>关于这本「风物志」</h1>
+    <p class="lede">六页纸，一本小册子。谁做的、用什么做的、图和数字从哪儿来，都在这一页交代清楚。</p>
+    <p class="chapter-head__meta">课程作业 · 个人网页设计与制作 · 2026 年 11 月</p>
+  </section>
+
+  <figure class="plate plate--wide wrap">
+    <img src="images/city-01.jpg" alt="天水渭河城市段，日出时河面与两岸建筑的倒影" width="800" height="533">
+    <figcaption><span class="plate-no">图 1</span> 渭河日出。天水城就铺在这条河的谷地里，南北两山夹着，东西一条水。</figcaption>
+  </figure>
+
+  <section class="wrap">
+    <div class="about-grid">
+      <div class="id-card">
+        <h2>作业信息</h2>
+        <div class="id-row"><label>姓名</label><span class="value placeholder">〔待填写〕</span></div>
+        <div class="id-row"><label>学号</label><span class="value placeholder">〔待填写〕</span></div>
+        <div class="id-row"><label>班级</label><span class="value placeholder">〔待填写〕</span></div>
+        <div class="id-row"><label>专业</label><span class="value placeholder">〔待填写〕</span></div>
+        <div class="id-row"><label>指导教师</label><span class="value placeholder">〔待填写〕</span></div>
+        <div class="id-row"><label>课程</label><span class="value">新生实践课 · 网页制作</span></div>
+        <div class="id-row"><label>页面数</label><span class="value">6 页（首页 + 5 个分页面）</span></div>
+        <p class="id-card__hint">括号内为占位内容，提交前请替换成自己的真实信息；这一页不涉及任何他人隐私。</p>
+        <div class="contact">
+          <a class="contact__mail" href="mailto:your-name@example.com">your-name@example.com</a>
+          <button class="copy-btn" type="button" id="copy-mail" data-mail="your-name@example.com">复制邮箱</button>
+        </div>
+      </div>
+
+      <div class="prose">
+        <h2 class="section-title">这本册子怎么来的</h2>
+        <p>题目要求做一个不少于五页的个人网页，主题自定，页面之间用相对路径互相链接。我选了家乡天水：一来素材近，二来它确实值得写——一座城同时拥有石窟、庙宇、古城和一套自己的早饭，这样的地方不多。</p>
+        <p>全站六个页面：卷首（首页）、麦积山、伏羲庙、古城名刹、天水食味、关于本站。首页负责把五章串起来，每一章的页眉与页脚都能回到任意一章，任何时候都不会走进死路。</p>
+        <p>技术上没有用任何框架，也没有引入第三方 JS。所有页面共用一份 CSS 与一份 JS，图片全部下载到本地 <code>images/</code> 目录，链接一律写成 <code>maijishan.html</code> 这样的相对路径，因此整个文件夹拷到任意目录、任意域名下都能直接打开。</p>
+
+        <h2 class="section-title">用到的工具</h2>
+        <p>编辑器 VS Code；浏览器 Chrome 做预览与响应式调试；图片统一压缩到长边 1600 像素再入库，避免仓库里堆着几 MB 的原图；版本管理用 Git，最后通过 GitHub Pages 发布。排版上没有用图标字体，全站的字形、印章、时间轴与中轴线图都由 CSS 和元素本身画出来。</p>
+
+        <h2 class="section-title">图片与文字</h2>
+        <p>照片来自公开报道与图库检索页（人民网、新华社、视觉中国、图虫创意、中新网等），仅用于课程作业演示，不作商业用途，版权归原作者所有。若需替换，把新的同名文件放进 <code>images/</code> 目录即可，页面不需要改动。</p>
+        <p>文字为本人撰写，数据均来自政府与文物部门的公开页面，出处列在下方。个别民间传说（如呱呱与隗嚣之母的掌故）在正文里已写明「相传」，与史实记载区分开。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sources wrap" aria-labelledby="src-title">
+    <p class="kicker">资料与来源</p>
+    <h2 class="section-title" id="src-title">页面里的数字从哪来</h2>
+    <p class="section-sub">均为公开页面，可逐条核对。</p>
+    <ul class="sources__list">
+      <li><b>01</b>天水市人民政府《麦积山风景名胜区》：221 座洞窟、10632 身泥塑石雕、1000 多平方米壁画。<a href="https://www.tianshui.gov.cn/info/3851/329121.htm" target="_blank" rel="noopener">tianshui.gov.cn</a></li>
+      <li><b>02</b>敦煌研究院《麦积山石窟，「东方微笑」何以跨越千年》：始建于十六国后秦，2014 年列入《世界遗产名录》。<a href="https://www.dha.ac.cn/info/1018/6116.htm" target="_blank" rel="noopener">dha.ac.cn</a></li>
+      <li><b>03</b>天水市人民政府《聆听远古的声音》：伏羲庙建于明成化十九年（1483 年），占地约 35000 平方米。<a href="https://www.tianshui.gov.cn/wlj/info/1822/175582.htm" target="_blank" rel="noopener">tianshui.gov.cn</a></li>
+      <li><b>04</b>甘肃省人民政府《公祭中华人文始祖伏羲大典》：每年夏至（6 月 21 日前后）在天水伏羲庙举行。<a href="http://gansu.gov.cn/gsszf/gsyw/202506/174160079.shtml" target="_blank" rel="noopener">gansu.gov.cn</a></li>
+      <li><b>05</b>天水市人民政府《南郭寺》：始建于北朝，杜甫流寓秦州时作「山头南郭寺，水号北流泉」。<a href="http://www.tianshui.gov.cn/info/4851/601021.htm" target="_blank" rel="noopener">tianshui.gov.cn</a></li>
+      <li><b>06</b>天水市人民政府《全国重点文物保护单位名录》：玉泉观始建于唐代早期，2006 年列入第六批国保。<a href="https://www.tianshui.gov.cn/info/4841/600351.htm" target="_blank" rel="noopener">tianshui.gov.cn</a></li>
+      <li><b>07</b>秦安县人民政府《大地湾遗址》：距今约 7800—4800 年，面积约 275 万平方米，1988 年列入国保。<a href="https://www.qinan.gov.cn/info/10162/83391.htm" target="_blank" rel="noopener">qinan.gov.cn</a></li>
+    </ul>
+  </section>
+
+  <section class="wrap sources" aria-labelledby="log-title">
+    <p class="kicker">制作过程</p>
+    <h2 class="section-title" id="log-title">四步做完</h2>
+    <ul class="sources__list">
+      <li><b>一</b>定选题与结构：确定六页的章次、每页要讲的事，画一张页面关系草图。</li>
+      <li><b>二</b>找素材：逐张核对图片内容与地点，确认清晰、无水印，压缩后入库。</li>
+      <li><b>三</b>写页面：先写共用 CSS 与 JS，再从首页往分页面推进，每页都做宽屏与窄屏两次预览。</li>
+      <li><b>四</b>自检与发布：逐页点一遍所有链接，检查相对路径，最后推送 GitHub 并开启 Pages。</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap site-foot__inner">
+    <div>
+      <p class="site-foot__title">天水风物志</p>
+      <p>一份关于甘肃天水的个人网页作业：崖壁、庙宇、古城与早饭，共六页。</p>
+      <p class="site-foot__colophon">本站为课程作业，非官方页面。图片来源与数据出处见<a href="about.html">关于本站</a>；页面链接全部使用相对路径，整份文件夹拷贝到哪里都能直接打开。</p>
+    </div>
+    <nav class="site-foot__nav" aria-label="页脚导航">
+      <a href="index.html">卷首</a>
+      <a href="maijishan.html">麦积山</a>
+      <a href="fuximiao.html">伏羲庙</a>
+      <a href="gucheng.html">古城名刹</a>
+      <a href="shiwei.html">天水食味</a>
+      <a href="about.html">关于本站</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
